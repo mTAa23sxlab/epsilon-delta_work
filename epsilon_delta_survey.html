@@ -539,11 +539,22 @@
       document.getElementById('sendingOverlay').classList.remove('hidden');
       
       try {
-        // GETリクエストで送信（CORS回避）
-        const params = encodeURIComponent(JSON.stringify(data));
-        const img = new Image();
-        img.src = GAS_URL + '?data=' + params;
-        await new Promise(r => setTimeout(r, 1000));
+        // Googleフォームへ送信（ログイン不要・ドメイン制限なし）
+        const FORM_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSffMZua4D3LmgNxFCW_JIvN06kcQihazdcinzM-3cYWgFc6Fg/formResponse';
+        const formData = new FormData();
+        formData.append('entry.1912723800', data.studentId || '');
+        formData.append('entry.884890775',  data.studentName || '');
+        formData.append('entry.1190080578', data.group || '');
+        formData.append('entry.1780153883', data.phase || '');
+        formData.append('entry.1219600165', data.q1 || '');
+        formData.append('entry.1482035185', data.q2 || '');
+        formData.append('entry.1638299374', data.q3 || '');
+        formData.append('entry.647154644',  data.q4 || '');
+        await fetch(FORM_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          body: formData
+        });
         console.log('送信完了:', phase, data);
       } catch (e) { 
         console.error(e); 

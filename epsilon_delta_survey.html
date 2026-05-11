@@ -539,11 +539,12 @@
       document.getElementById('sendingOverlay').classList.remove('hidden');
       
       try {
-        // GETリクエストで送信（CORS回避）
+        // fetchで送信（Chrome・Edge両対応）
         const params = encodeURIComponent(JSON.stringify(data));
-        const img = new Image();
-        img.src = GAS_URL + '?data=' + params;
-        await new Promise(r => setTimeout(r, 1000));
+        await fetch(GAS_URL + '?data=' + params, {
+          method: 'GET',
+          mode: 'no-cors'
+        });
         console.log('送信完了:', phase, data);
       } catch (e) { 
         console.error(e); 

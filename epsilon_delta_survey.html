@@ -531,7 +531,8 @@
     }
     
     async function sendData(phase) {
-      let data = { studentId: state.studentId, studentName: state.studentName, group: state.group, phase: phase };
+      const groupLabel = state.group === 'experimental' ? 'クラス1' : 'クラス2';
+      let data = { studentId: state.studentId, studentName: state.studentName, group: groupLabel, phase: phase };
       if (phase === 'pre') data = { ...data, ...getPreTestData() };
       else if (phase === 'worksheet') { const ws = getWorksheetData(); data.q1 = JSON.stringify(ws.confirm); data.q2 = JSON.stringify(ws.explore); data.q3 = ws.q4; data.q4 = ws.q4r; }
       else if (phase === 'post') data = { ...data, ...getPostTestData() };

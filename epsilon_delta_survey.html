@@ -67,10 +67,10 @@
     .options { display: flex; flex-direction: column; gap: 0.4rem; margin-left: 2rem; font-size: 1.05rem; }
     .option { display: flex; align-items: flex-start; gap: 0.5rem; }
     .option input { margin-top: 0.2rem; }
-    .def-box { background: #fffbeb; border: none; border-radius: 0.5rem; padding: 0.5rem; margin-bottom: 0.5rem; font-family: serif; text-align: center; font-size: 0.85rem; }
+    .def-box { background: #fffbeb; border: none; border-radius: 0.5rem; padding: 0.8rem; margin-bottom: 0.5rem; font-family: serif; text-align: center; font-size: 1.2rem; }
     .graph-box { display: flex; gap: 0.75rem; justify-content: center; margin: 0.5rem 0; flex-wrap: wrap; }
     .graph-item { text-align: center; }
-    .graph { width: 100px; height: 75px; border: none; border-radius: 0.25rem; background: white; }
+    .graph { width: 160px; height: 120px; border: none; border-radius: 0.25rem; background: white; }
     textarea { width: 100%; padding: 0.5rem; border: 1px solid #e2e8f0; border-radius: 0.25rem; font-size: 0.85rem; }
     
     .material-card { background: #f9fafb; border: none; border-radius: 0.5rem; padding: 0.5rem; margin-bottom: 0.5rem; }
@@ -108,9 +108,9 @@
     .mb-2 { margin-bottom: 0.5rem; }
     .mt-1 { margin-top: 0.25rem; }
     
-    .summary-grid { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; align-items: center; gap: 0.5rem; font-size: 0.7rem; }
+    .summary-grid { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; align-items: center; gap: 0.8rem; font-size: 1.05rem; }
     .summary-box { background: #f8fafc; border: none; border-radius: 0.375rem; padding: 0.4rem; text-align: center; }
-    .summary-arrow { color: #4f46e5; font-weight: bold; font-size: 1.2rem; }
+    .summary-arrow { color: #4f46e5; font-weight: bold; font-size: 1.6rem; }
     
     .hidden { display: none !important; }
     
@@ -187,7 +187,7 @@
   <main id="mainContent">
     <!-- Phase 0: Pre-test -->
     <div class="phase" id="phase0">
-      <div class="phase-header test"><h2>📝 事前テスト</h2><p>現在の理解度を確認します（約5分）</p></div>
+      <div class="phase-header test"><h2>📝 事前テスト</h2><p>現在の理解度を確認します</p></div>
       <div class="content">
         <div class="question">
           <div class="q-header"><span class="q-num">1</span><span class="q-text">ε-δ論法の定義において、正しい記述はどれか</span><span class="q-point">(1点)</span></div>
@@ -211,9 +211,9 @@
         <div class="question">
           <div class="q-header"><span class="q-num">3</span><span class="q-text">点a で連続なグラフはどれか（複数選択可）</span><span class="q-point">(1点)</span></div>
           <div class="graph-box">
-            <div class="graph-item"><div class="graph"><svg width="100" height="75" viewBox="0 0 100 75"><line x1="10" y1="65" x2="90" y2="65" stroke="#ccc"/><line x1="50" y1="10" x2="50" y2="65" stroke="#ccc"/><path d="M 15 55 Q 50 20 85 55" stroke="#2563eb" stroke-width="2" fill="none"/><circle cx="50" cy="37" r="3" fill="#2563eb"/><text x="52" y="73" font-size="8" fill="#666">a</text></svg></div><p style="font-size:0.75rem;">A</p></div>
-            <div class="graph-item"><div class="graph"><svg width="100" height="75" viewBox="0 0 100 75"><line x1="10" y1="65" x2="90" y2="65" stroke="#ccc"/><line x1="50" y1="10" x2="50" y2="65" stroke="#ccc"/><path d="M 15 50 L 47 30" stroke="#2563eb" stroke-width="2" fill="none"/><path d="M 53 50 L 85 30" stroke="#2563eb" stroke-width="2" fill="none"/><circle cx="50" cy="30" r="3" fill="white" stroke="#2563eb" stroke-width="2"/><circle cx="50" cy="50" r="3" fill="#2563eb"/><text x="52" y="73" font-size="8" fill="#666">a</text></svg></div><p style="font-size:0.75rem;">B</p></div>
-            <div class="graph-item"><div class="graph"><svg width="100" height="75" viewBox="0 0 100 75"><line x1="10" y1="65" x2="90" y2="65" stroke="#ccc"/><line x1="50" y1="10" x2="50" y2="65" stroke="#ccc"/><path d="M 15 40 L 47 40" stroke="#2563eb" stroke-width="2" fill="none"/><path d="M 53 40 L 85 40" stroke="#2563eb" stroke-width="2" fill="none"/><circle cx="50" cy="40" r="3" fill="white" stroke="#2563eb" stroke-width="2"/><circle cx="50" cy="25" r="3" fill="#2563eb"/><text x="52" y="73" font-size="8" fill="#666">a</text></svg></div><p style="font-size:0.75rem;">C</p></div>
+            <div class="graph-item"><div class="graph"><svg width="160" height="120" viewBox="0 0 100 75"><line x1="10" y1="65" x2="90" y2="65" stroke="#ccc"/><line x1="50" y1="10" x2="50" y2="65" stroke="#ccc"/><path d="M 15 55 Q 50 20 85 55" stroke="#2563eb" stroke-width="2" fill="none"/><circle cx="50" cy="37" r="3" fill="#2563eb"/><text x="52" y="73" font-size="12" fill="#666">a</text></svg></div><p style="font-size:0.75rem;">A</p></div>
+            <div class="graph-item"><div class="graph"><svg width="160" height="120" viewBox="0 0 100 75"><line x1="10" y1="65" x2="90" y2="65" stroke="#ccc"/><line x1="50" y1="10" x2="50" y2="65" stroke="#ccc"/><path d="M 15 50 L 47 30" stroke="#2563eb" stroke-width="2" fill="none"/><path d="M 53 50 L 85 30" stroke="#2563eb" stroke-width="2" fill="none"/><circle cx="50" cy="30" r="3" fill="white" stroke="#2563eb" stroke-width="2"/><circle cx="50" cy="50" r="3" fill="#2563eb"/><text x="52" y="73" font-size="12" fill="#666">a</text></svg></div><p style="font-size:0.75rem;">B</p></div>
+            <div class="graph-item"><div class="graph"><svg width="160" height="120" viewBox="0 0 100 75"><line x1="10" y1="65" x2="90" y2="65" stroke="#ccc"/><line x1="50" y1="10" x2="50" y2="65" stroke="#ccc"/><path d="M 15 40 L 47 40" stroke="#2563eb" stroke-width="2" fill="none"/><path d="M 53 40 L 85 40" stroke="#2563eb" stroke-width="2" fill="none"/><circle cx="50" cy="40" r="3" fill="white" stroke="#2563eb" stroke-width="2"/><circle cx="50" cy="25" r="3" fill="#2563eb"/><text x="52" y="73" font-size="12" fill="#666">a</text></svg></div><p style="font-size:0.75rem;">C</p></div>
           </div>
           <div class="options">
             <div class="option"><input type="checkbox" name="pre_q3" value="A"><label>A</label></div>
@@ -277,7 +277,7 @@
     
     <!-- Phase 2: Material -->
     <div class="phase" id="phase2">
-      <div class="phase-header material"><h2>🖥️ 視覚教材</h2><p>講義内容をグラフで確認（約10分）</p></div>
+      <div class="phase-header material"><h2>🖥️ 視覚教材</h2><p>講義内容をグラフで確認</p></div>
       <div class="content">
         <div id="mat0">
           <div class="def-box mb-2"><p class="text-xs font-bold text-orange text-center mb-1">ε-δ論法の定義</p><p class="text-xs text-center">lim<sub>x→a</sub>f(x)=L ⟺ ∀ε>0, ∃δ>0 s.t. <span class="text-blue">|x−a|<δ</span> ⇒ <span class="text-red">|f(x)−L|<ε</span></p></div>
@@ -308,7 +308,7 @@
         </div>
         <div id="mat2" class="hidden">
           <p class="text-sm font-bold text-center mb-2">まとめ</p>
-          <div class="material-card mb-2" style="padding:0.5rem;"><p class="text-xs font-bold text-center mb-2">教材の視覚 ＝ 定義式の論理</p><div class="summary-grid"><div class="summary-box"><div style="background:#dbeafe;padding:0.2rem;border-radius:0.25rem;margin-bottom:0.2rem;">青の中のグラフ</div><div>が収まる</div><div style="background:#fee2e2;padding:0.2rem;border-radius:0.25rem;margin-top:0.2rem;">赤い帯</div></div><div class="summary-arrow">=</div><div class="summary-box"><div style="background:#dbeafe;padding:0.2rem;border-radius:0.25rem;margin-bottom:0.2rem;">|x−a|<δ</div><div>⇒</div><div style="background:#fee2e2;padding:0.2rem;border-radius:0.25rem;margin-top:0.2rem;">|f(x)−L|<ε</div></div><div class="summary-arrow">→</div><div class="summary-box" style="background:#f0fdf4;border-color:#86efac;"><div class="font-bold text-green">ε-δ論法</div><div class="font-bold text-green">成立</div></div></div></div>
+          <div class="material-card mb-2" style="padding:1rem;"><p class="font-bold text-center mb-2" style="font-size:1.1rem;">教材の視覚 ＝ 定義式の論理</p><div class="summary-grid"><div class="summary-box"><div style="background:#dbeafe;padding:0.4rem;border-radius:0.25rem;margin-bottom:0.3rem;font-size:1.05rem;">青の帯</div><div style="font-size:1.0rem;">が</div><div style="background:#fee2e2;padding:0.4rem;border-radius:0.25rem;margin-top:0.3rem;font-size:1.05rem;">赤い帯 に収まる</div></div><div class="summary-arrow">=</div><div class="summary-box"><div style="background:#dbeafe;padding:0.4rem;border-radius:0.25rem;margin-bottom:0.3rem;font-size:1.05rem;">|x−a|&lt;δ</div><div style="font-size:1.2rem;">⇒</div><div style="background:#fee2e2;padding:0.4rem;border-radius:0.25rem;margin-top:0.3rem;font-size:1.05rem;">|f(x)−L|&lt;ε</div></div><div class="summary-arrow">→</div><div class="summary-box" style="background:#f0fdf4;"><div class="font-bold text-green" style="font-size:1.1rem;">ε-δ論法</div><div class="font-bold text-green" style="font-size:1.1rem;">成立</div></div></div></div>
           <div class="flex mb-2"><div class="material-card green" style="flex:1;text-align:center;"><p class="text-xs font-bold text-green">どんな ε でも δ が見つかる</p><p class="text-xs">→ <strong>連続</strong>（b=0）</p></div><div class="material-card red" style="flex:1;text-align:center;"><p class="text-xs font-bold text-red">b>ε なら δ が見つからない</p><p class="text-xs">→ <strong>不連続</strong>（b>0）</p></div></div>
           
           <div class="material-card blue"><p class="text-xs font-bold text-blue">Q4. 理解は深まりましたか？</p><select id="ws_q4" style="width:100%;font-size:0.75rem;"><option value="">選択</option><option value="とても深まった">とても深まった</option><option value="深まった">深まった</option><option value="あまり深まらなかった">あまり</option><option value="深まらなかった">深まらなかった</option></select><p class="text-xs font-bold mt-1">具体的に:</p><textarea id="ws_q4r" rows="2" style="font-size:0.75rem;"></textarea></div>
@@ -323,7 +323,7 @@
     
     <!-- Phase 3: Post-test -->
     <div class="phase" id="phase3">
-      <div class="phase-header test"><h2>📝 事後テスト</h2><p>学習後の理解度を確認（約5分）</p></div>
+      <div class="phase-header test"><h2>📝 事後テスト</h2><p>学習後の理解度を確認</p></div>
       <div class="content">
         <div class="question">
           <div class="q-header"><span class="q-num">1</span><span class="q-text">ε-δ論法の定義において、正しい記述はどれか</span><span class="q-point">(1点)</span></div>
@@ -347,9 +347,9 @@
         <div class="question">
           <div class="q-header"><span class="q-num">3</span><span class="q-text">点aで連続なグラフはどれか（複数選択可）</span><span class="q-point">(1点)</span></div>
           <div class="graph-box">
-            <div class="graph-item"><div class="graph"><svg width="100" height="75" viewBox="0 0 100 75"><line x1="10" y1="65" x2="90" y2="65" stroke="#ccc"/><line x1="50" y1="10" x2="50" y2="65" stroke="#ccc"/><path d="M 15 55 Q 50 20 85 55" stroke="#2563eb" stroke-width="2" fill="none"/><circle cx="50" cy="37" r="3" fill="#2563eb"/><text x="52" y="73" font-size="8" fill="#666">a</text></svg></div><p style="font-size:0.75rem;">A</p></div>
-            <div class="graph-item"><div class="graph"><svg width="100" height="75" viewBox="0 0 100 75"><line x1="10" y1="65" x2="90" y2="65" stroke="#ccc"/><line x1="50" y1="10" x2="50" y2="65" stroke="#ccc"/><path d="M 15 50 L 47 30" stroke="#2563eb" stroke-width="2" fill="none"/><path d="M 53 50 L 85 30" stroke="#2563eb" stroke-width="2" fill="none"/><circle cx="50" cy="30" r="3" fill="white" stroke="#2563eb" stroke-width="2"/><circle cx="50" cy="50" r="3" fill="#2563eb"/><text x="52" y="73" font-size="8" fill="#666">a</text></svg></div><p style="font-size:0.75rem;">B</p></div>
-            <div class="graph-item"><div class="graph"><svg width="100" height="75" viewBox="0 0 100 75"><line x1="10" y1="65" x2="90" y2="65" stroke="#ccc"/><line x1="50" y1="10" x2="50" y2="65" stroke="#ccc"/><path d="M 15 40 L 47 40" stroke="#2563eb" stroke-width="2" fill="none"/><path d="M 53 40 L 85 40" stroke="#2563eb" stroke-width="2" fill="none"/><circle cx="50" cy="40" r="3" fill="white" stroke="#2563eb" stroke-width="2"/><circle cx="50" cy="25" r="3" fill="#2563eb"/><text x="52" y="73" font-size="8" fill="#666">a</text></svg></div><p style="font-size:0.75rem;">C</p></div>
+            <div class="graph-item"><div class="graph"><svg width="160" height="120" viewBox="0 0 100 75"><line x1="10" y1="65" x2="90" y2="65" stroke="#ccc"/><line x1="50" y1="10" x2="50" y2="65" stroke="#ccc"/><path d="M 15 55 Q 50 20 85 55" stroke="#2563eb" stroke-width="2" fill="none"/><circle cx="50" cy="37" r="3" fill="#2563eb"/><text x="52" y="73" font-size="12" fill="#666">a</text></svg></div><p style="font-size:0.75rem;">A</p></div>
+            <div class="graph-item"><div class="graph"><svg width="160" height="120" viewBox="0 0 100 75"><line x1="10" y1="65" x2="90" y2="65" stroke="#ccc"/><line x1="50" y1="10" x2="50" y2="65" stroke="#ccc"/><path d="M 15 50 L 47 30" stroke="#2563eb" stroke-width="2" fill="none"/><path d="M 53 50 L 85 30" stroke="#2563eb" stroke-width="2" fill="none"/><circle cx="50" cy="30" r="3" fill="white" stroke="#2563eb" stroke-width="2"/><circle cx="50" cy="50" r="3" fill="#2563eb"/><text x="52" y="73" font-size="12" fill="#666">a</text></svg></div><p style="font-size:0.75rem;">B</p></div>
+            <div class="graph-item"><div class="graph"><svg width="160" height="120" viewBox="0 0 100 75"><line x1="10" y1="65" x2="90" y2="65" stroke="#ccc"/><line x1="50" y1="10" x2="50" y2="65" stroke="#ccc"/><path d="M 15 40 L 47 40" stroke="#2563eb" stroke-width="2" fill="none"/><path d="M 53 40 L 85 40" stroke="#2563eb" stroke-width="2" fill="none"/><circle cx="50" cy="40" r="3" fill="white" stroke="#2563eb" stroke-width="2"/><circle cx="50" cy="25" r="3" fill="#2563eb"/><text x="52" y="73" font-size="12" fill="#666">a</text></svg></div><p style="font-size:0.75rem;">C</p></div>
           </div>
           <div class="options">
             <div class="option"><input type="checkbox" name="post_q3" value="A"><label>A</label></div>

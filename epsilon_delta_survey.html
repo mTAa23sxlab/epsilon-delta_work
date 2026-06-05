@@ -291,10 +291,10 @@
               <div class="material-card yellow" style="padding:0.3rem;"><p class="text-xs"><strong>設定:</strong> f(x) = x², a = 1, b = 0</p></div>
               <div class="warn-box"><p class="text-xs text-orange"><strong>⚠️ 右は ε = 1.0 の例。下表は別の ε値 なので自分で操作！</strong></p></div>
               <table>
-<tr><th>δ</th><th>収まった？</th></tr>
-<tr><td><strong>0.5</strong></td><td><select class="table-select" id="ws_e1r"><option value="">-</option><option value="収まった">✓</option><option value="収まらなかった">✗</option></select></td></tr>
-<tr><td><strong>0.02</strong></td><td><select class="table-select" id="ws_e2r"><option value="">-</option><option value="収まった">✓</option><option value="収まらなかった">✗</option></select></td></tr>
-<tr><td><strong>0.001</strong></td><td><select class="table-select" id="ws_e3r"><option value="">-</option><option value="収まった">✓</option><option value="収まらなかった">✗</option></select></td></tr>
+<tr><th>ε</th><th>δ</th><th>収まった？</th></tr>
+<tr><td><strong>0.5</strong></td><td><input type="text" class="table-input" id="ws_d1" placeholder="?"></td><td><select class="table-select" id="ws_r1"><option value="">-</option><option value="収まった">✓</option><option value="収まらなかった">✗</option></select></td></tr>
+<tr><td><strong>0.02</strong></td><td><input type="text" class="table-input" id="ws_d2" placeholder="?"></td><td><select class="table-select" id="ws_r2"><option value="">-</option><option value="収まった">✓</option><option value="収まらなかった">✗</option></select></td></tr>
+<tr><td><strong>0.001</strong></td><td><input type="text" class="table-input" id="ws_d3" placeholder="?"></td><td><select class="table-select" id="ws_r3"><option value="">-</option><option value="収まった">✓</option><option value="収まらなかった">✗</option></select></td></tr>
 </table>
               <div class="material-card green mt-1"><p class="text-xs font-bold text-green">Q1. 試した ε では毎回 δ が見つかりましたか？</p><select id="ws_q1" style="width:100%;font-size:0.75rem;"><option value="">選択</option><option value="はい">はい</option><option value="いいえ">いいえ</option></select></div>
             </div>
@@ -308,10 +308,10 @@
               <div class="material-card yellow" style="padding:0.3rem;"><p class="text-xs"><strong>設定:</strong> f(x) = x², a = 1, <strong class="text-red">b = 0.5, ε = 0.4</strong></p></div>
               <div class="warn-box"><p class="text-xs text-orange"><strong>⚠️ 右は ε = 0.3 の例。ε = 0.4 で自分で操作！</strong></p></div>
               <table>
-<tr><th>ε</th><th>δ</th><th>収まった？</th></tr>
-<tr><td><strong>0.5</strong></td><td><input type="text" class="table-input" id="ws_e1d" placeholder="?"></td><td><select class="table-select" id="ws_e1r"><option value="">-</option><option value="収まった">✓</option><option value="収まらなかった">✗</option></select></td></tr>
-<tr><td><strong>0.02</strong></td><td><input type="text" class="table-input" id="ws_e2d" placeholder="?"></td><td><select class="table-select" id="ws_e2r"><option value="">-</option><option value="収まった">✓</option><option value="収まらなかった">✗</option></select></td></tr>
-<tr><td><strong>0.001</strong></td><td><input type="text" class="table-input" id="ws_e3d" placeholder="?"></td><td><select class="table-select" id="ws_e3r"><option value="">-</option><option value="収まった">✓</option><option value="収まらなかった">✗</option></select></td></tr>
+<tr><th>δ</th><th>収まった？</th></tr>
+<tr><td><strong>0.5</strong></td><td><select class="table-select" id="ws_e1r"><option value="">-</option><option value="収まった">✓</option><option value="収まらなかった">✗</option></select></td></tr>
+<tr><td><strong>0.02</strong></td><td><select class="table-select" id="ws_e2r"><option value="">-</option><option value="収まった">✓</option><option value="収まらなかった">✗</option></select></td></tr>
+<tr><td><strong>0.001</strong></td><td><select class="table-select" id="ws_e3r"><option value="">-</option><option value="収まった">✓</option><option value="収まらなかった">✗</option></select></td></tr>
 </table>
               <div class="material-card red mt-1"><p class="text-xs font-bold text-red">Q2. δ は見つかりましたか？</p><select id="ws_q2" style="width:100%;font-size:0.75rem;"><option value="">選択</option><option value="見つかった">見つかった</option><option value="見つからなかった">見つからなかった</option></select></div>
               <div class="material-card mt-1"><p class="text-xs font-bold">Q3. Q2について、b(0.5)とε(0.4)の関係から考えてみましょう</p><textarea id="ws_q3" rows="2" style="font-size:0.75rem;"></textarea></div>

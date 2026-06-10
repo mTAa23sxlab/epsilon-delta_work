@@ -527,9 +527,24 @@
     
     function getWorksheetData() {
       return {
-        confirm: { d1: document.getElementById('ws_d1')?.value||'', d2: document.getElementById('ws_d2')?.value||'', r1: document.getElementById('ws_r1')?.value||'', r2: document.getElementById('ws_r2')?.value||'', q1: document.getElementById('ws_q1')?.value||'' },
-        explore: { e1: document.getElementById('ws_e1')?.value||'', e2: document.getElementById('ws_e2')?.value||'', e3: document.getElementById('ws_e3')?.value||'', q2: document.getElementById('ws_q2')?.value||'', q3: document.getElementById('ws_q3')?.value||'' },
-        q4: document.getElementById('ws_q4')?.value||'', q4r: document.getElementById('ws_q4r')?.value||''
+        confirm: {
+          d1: document.getElementById('ws_d1')?.value||'',
+          d2: document.getElementById('ws_d2')?.value||'',
+          d3: document.getElementById('ws_d3')?.value||'',
+          r1: document.getElementById('ws_r1')?.value||'',
+          r2: document.getElementById('ws_r2')?.value||'',
+          r3: document.getElementById('ws_r3')?.value||'',
+          q1: document.getElementById('ws_q1')?.value||''
+        },
+        explore: {
+          e1r: document.getElementById('ws_e1r')?.value||'',
+          e2r: document.getElementById('ws_e2r')?.value||'',
+          e3r: document.getElementById('ws_e3r')?.value||'',
+          q2: document.getElementById('ws_q2')?.value||'',
+          q3: document.getElementById('ws_q3')?.value||''
+        },
+        q4: document.getElementById('ws_q4')?.value||'',
+        q4r: document.getElementById('ws_q4r')?.value||''
       };
     }
     
@@ -546,7 +561,7 @@
       const groupLabel = state.group === 'experimental' ? 'クラス1' : 'クラス2';
       let data = { studentId: state.studentId, studentName: state.studentName, group: groupLabel, phase: phase };
       if (phase === 'pre') data = { ...data, ...getPreTestData() };
-      else if (phase === 'worksheet') { const ws = getWorksheetData(); data.q1 = JSON.stringify(ws.confirm); data.q2 = JSON.stringify(ws.explore); data.q3 = ws.q4; data.q4 = ws.q4r; }
+      else if (phase === 'worksheet') { const ws = getWorksheetData(); data.q1 = JSON.stringify(ws.confirm); data.q2 = JSON.stringify(ws.explore); data.q3 = ws.explore.q3 || ''; data.q4 = JSON.stringify({q4: ws.q4, q4r: ws.q4r}); }
       else if (phase === 'post') data = { ...data, ...getPostTestData() };
       
       document.getElementById('sendingOverlay').classList.remove('hidden');

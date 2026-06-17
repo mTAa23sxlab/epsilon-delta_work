@@ -556,7 +556,7 @@
       const groupLabel = state.group === 'experimental' ? 'クラス1' : 'クラス2';
       let data = { studentId: state.studentId, studentName: state.studentName, group: groupLabel, phase: phase };
       if (phase === 'pre') data = { ...data, ...getPreTestData() };
-      else if (phase === 'worksheet') { const ws = getWorksheetData(); data.q1 = JSON.stringify(ws.confirm); data.q2 = JSON.stringify(ws.explore); data.q3 = ws.explore.q3 || ''; data.q4 = JSON.stringify({q4: ws.q4, q4r: ws.q4r}); }
+      else if (phase === 'worksheet') { const ws = getWorksheetData(); const { q3: _exploreQ3, ...exploreTable } = ws.explore; data.q1 = JSON.stringify(ws.confirm); data.q2 = JSON.stringify(exploreTable); data.q3 = ws.explore.q3 || ''; data.q4 = JSON.stringify({q4: ws.q4, q4r: ws.q4r}); }
       else if (phase === 'post') data = { ...data, ...getPostTestData() };
       
       document.getElementById('sendingOverlay').classList.remove('hidden');

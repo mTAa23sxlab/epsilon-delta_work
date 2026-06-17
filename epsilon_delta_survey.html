@@ -187,25 +187,24 @@
   <main id="mainContent">
     <!-- Phase 0: Pre-test -->
     <div class="phase" id="phase0">
-      <div class="phase-header test"><h2>📝 事前テスト</h2><p>現在の理解度を確認します</p></div>
       <div class="content">
         <div class="question">
           <div class="q-header"><span class="q-num">1</span><span class="q-text">ε-δ論法の定義において、正しい記述はどれか</span><span class="q-point">(1点)</span></div>
           <div class="def-box">lim<sub>x→a</sub>f(x) = L ⟺ ∀ε>0, ∃δ>0 s.t. |x−a|<δ ⇒ |f(x)−L|<ε</div>
           <div class="options">
-            <div class="option"><input type="radio" name="pre_q1" value="a"><label>a. δ を先に決め、それに応じて ε を選ぶ</label></div>
-            <div class="option"><input type="radio" name="pre_q1" value="b"><label>b. ε と δ は同時に決める</label></div>
-            <div class="option"><input type="radio" name="pre_q1" value="c"><label>c. ε を先に決め、それに応じて δ を選ぶ</label></div>
-            <div class="option"><input type="radio" name="pre_q1" value="d"><label>d. ε と δ の順序は関係ない</label></div>
+            <div class="option"><input type="radio" name="pre_q1" value="a"><label>δ を先に決め、それに応じて ε を選ぶ</label></div>
+            <div class="option"><input type="radio" name="pre_q1" value="b"><label>ε と δ は同時に決める</label></div>
+            <div class="option"><input type="radio" name="pre_q1" value="c"><label>ε を先に決め、それに応じて δ を選ぶ</label></div>
+            <div class="option"><input type="radio" name="pre_q1" value="d"><label>ε と δ の順序は関係ない</label></div>
           </div>
         </div>
         <div class="question">
           <div class="q-header"><span class="q-num">2</span><span class="q-text">「|x−a|<δ ⇒ |f(x)−L|<ε」の意味として正しいのはどれか</span><span class="q-point">(1点)</span></div>
           <div class="options">
-            <div class="option"><input type="radio" name="pre_q2" value="a"><label>a. x が a から δ 未満の距離にあれば、f(x) は L から ε 未満の距離にある</label></div>
-            <div class="option"><input type="radio" name="pre_q2" value="b"><label>b. f(x) が L から ε 未満の距離にあれば、x は a から δ 未満の距離にある</label></div>
-            <div class="option"><input type="radio" name="pre_q2" value="c"><label>c. x が a から δ 以上離れていれば、f(x) は L から ε 以上離れる</label></div>
-            <div class="option"><input type="radio" name="pre_q2" value="d"><label>d. f(x) が L から ε 以上離れていれば、x は a から δ 以上離れる</label></div>
+            <div class="option"><input type="radio" name="pre_q2" value="a"><label>x が a から δ 未満の距離にあれば、f(x) は L から ε 未満の距離にある</label></div>
+            <div class="option"><input type="radio" name="pre_q2" value="b"><label>f(x) が L から ε 未満の距離にあれば、x は a から δ 未満の距離にある</label></div>
+            <div class="option"><input type="radio" name="pre_q2" value="c"><label>x が a から δ 以上離れていれば、f(x) は L から ε 以上離れる</label></div>
+            <div class="option"><input type="radio" name="pre_q2" value="d"><label>f(x) が L から ε 以上離れていれば、x は a から δ 以上離れる</label></div>
           </div>
         </div>
         <div class="question">
@@ -230,7 +229,6 @@
     
     <!-- Phase 1: Lecture -->
     <div class="phase" id="phase1">
-      <div class="phase-header lecture"><h2>📖 教科書講義</h2><p>ε-δ論法の定義と例題</p></div>
       <div class="content">
         <div class="lecture-slide" id="lec0">
           <div class="lecture-title">ε-δ論法の定義</div>
@@ -280,7 +278,6 @@
     
     <!-- Phase 2: Material -->
     <div class="phase" id="phase2">
-      <div class="phase-header material"><h2>🖥️ 視覚教材</h2><p>講義内容をグラフで確認</p></div>
       <div class="content">
         <div id="mat0">
           <div class="def-box mb-2"><p class="text-xs font-bold text-orange text-center mb-1">ε-δ論法の定義</p><p class="text-xs text-center">lim<sub>x→a</sub>f(x) = L ⟺ ∀ε > 0, ∃δ > 0 s.t. <span class="text-blue">| x − a | < δ</span> ⇒ <span class="text-red">| f(x) − L | < ε</span></p></div>
@@ -292,29 +289,27 @@
               <div class="warn-box"><p class="text-xs text-orange"><strong>⚠️ 右は ε = 1.0 の例。下表は別の ε値 なので自分で操作！</strong></p></div>
               <table>
 <tr><th>ε</th><th>δ</th><th>収まった？</th></tr>
-<tr><td><strong>0.5</strong></td><td><input type="text" class="table-input" id="ws_d1" placeholder="?"></td><td><select class="table-select" id="ws_r1"><option value="">-</option><option value="収まった">✓</option><option value="収まらなかった">✗</option></select></td></tr>
-<tr><td><strong>0.02</strong></td><td><input type="text" class="table-input" id="ws_d2" placeholder="?"></td><td><select class="table-select" id="ws_r2"><option value="">-</option><option value="収まった">✓</option><option value="収まらなかった">✗</option></select></td></tr>
-<tr><td><strong>0.001</strong></td><td><input type="text" class="table-input" id="ws_d3" placeholder="?"></td><td><select class="table-select" id="ws_r3"><option value="">-</option><option value="収まった">✓</option><option value="収まらなかった">✗</option></select></td></tr>
+<tr><td><strong>0.5</strong></td><td><input type="text" class="table-input" id="ws_d1" placeholder="?"></td><td><select class="table-select" id="ws_r1"><option value="">-</option><option value="収まった">○</option><option value="収まらなかった">✗</option></select></td></tr>
+<tr><td><strong>0.02</strong></td><td><input type="text" class="table-input" id="ws_d2" placeholder="?"></td><td><select class="table-select" id="ws_r2"><option value="">-</option><option value="収まった">○</option><option value="収まらなかった">✗</option></select></td></tr>
+<tr><td><strong>0.001</strong></td><td><input type="text" class="table-input" id="ws_d3" placeholder="?"></td><td><select class="table-select" id="ws_r3"><option value="">-</option><option value="収まった">○</option><option value="収まらなかった">✗</option></select></td></tr>
 </table>
-              <div class="material-card green mt-1"><p class="text-xs font-bold text-green">Q1. 試した ε では毎回 δ が見つかりましたか？</p><select id="ws_q1" style="width:100%;font-size:0.75rem;"><option value="">選択</option><option value="はい">はい</option><option value="いいえ">いいえ</option></select></div>
             </div>
             <div class="w-half"><p class="text-xs text-gray text-center mb-1">参考: ε = 1.0 の例</p><div class="img-box"><img id="matImg1" src=""></div></div>
           </div>
         </div>
         <div id="mat1" class="hidden">
-          <div class="material-card purple mb-2"><p class="text-xs font-bold text-purple">📌 パラメータ b の意味</p><p class="text-xs">b = 0: 連続 ｜ b = 0.5: 点aで0.5だけ跳ぶ（不連続）</p></div>
+          <div class="material-card purple mb-2"><p class="text-xs font-bold text-purple">📌 パラメータ b の意味</p><p class="text-xs">b = 0: 連続 ｜ b = 0.2: 点aで0.2だけ跳ぶ（不連続）</p></div>
           <div class="flex">
             <div class="w-half">
-              <div class="material-card yellow" style="padding:0.3rem;"><p class="text-xs"><strong>設定:</strong> f(x) = x², a = 1, <strong class="text-red">b = 0.5, ε = 0.4</strong></p></div>
-              <div class="warn-box"><p class="text-xs text-orange"><strong>⚠️ 右は ε = 0.3 の例。ε = 0.4 で自分で操作！</strong></p></div>
+              <div class="material-card yellow" style="padding:0.3rem;"><p class="text-xs"><strong>設定:</strong> f(x) = x², a = 1, <strong class="text-red">b = 0.2</strong></p></div>
+              <div class="warn-box"><p class="text-xs text-orange"><strong>⚠️ 右は ε = 0.3 の例。下表は別の ε値 なので自分で操作！</strong></p></div>
               <table>
-<tr><th>δ</th><th>収まった？</th></tr>
-<tr><td><strong>0.5</strong></td><td><select class="table-select" id="ws_e1r"><option value="">-</option><option value="収まった">✓</option><option value="収まらなかった">✗</option></select></td></tr>
-<tr><td><strong>0.02</strong></td><td><select class="table-select" id="ws_e2r"><option value="">-</option><option value="収まった">✓</option><option value="収まらなかった">✗</option></select></td></tr>
-<tr><td><strong>0.001</strong></td><td><select class="table-select" id="ws_e3r"><option value="">-</option><option value="収まった">✓</option><option value="収まらなかった">✗</option></select></td></tr>
+<tr><th>ε</th><th>δ</th><th>収まった？</th></tr>
+<tr><td><strong>0.5</strong></td><td><input type="text" class="table-input" id="ws_e1d" placeholder="?"></td><td><select class="table-select" id="ws_e1r"><option value="">-</option><option value="収まった">○</option><option value="収まらなかった">✗</option></select></td></tr>
+<tr><td><strong>0.02</strong></td><td><input type="text" class="table-input" id="ws_e2d" placeholder="?"></td><td><select class="table-select" id="ws_e2r"><option value="">-</option><option value="収まった">○</option><option value="収まらなかった">✗</option></select></td></tr>
+<tr><td><strong>0.001</strong></td><td><input type="text" class="table-input" id="ws_e3d" placeholder="?"></td><td><select class="table-select" id="ws_e3r"><option value="">-</option><option value="収まった">○</option><option value="収まらなかった">✗</option></select></td></tr>
 </table>
-              <div class="material-card red mt-1"><p class="text-xs font-bold text-red">Q2. δ は見つかりましたか？</p><select id="ws_q2" style="width:100%;font-size:0.75rem;"><option value="">選択</option><option value="見つかった">見つかった</option><option value="見つからなかった">見つからなかった</option></select></div>
-              <div class="material-card mt-1"><p class="text-xs font-bold">Q3. Q2について、b(0.5)とε(0.4)の関係から考えてみましょう</p><textarea id="ws_q3" rows="2" style="font-size:0.75rem;"></textarea></div>
+              <div class="material-card mt-1"><p class="text-xs font-bold">Q1. 上の表の結果について、b(0.5) と ε の関係から考えてみましょう</p><textarea id="ws_q3" rows="2" style="font-size:0.75rem;"></textarea></div>
             </div>
             <div class="w-half"><p class="text-xs text-gray text-center mb-1">参考: ε = 0.3 の例</p><div class="img-box"><img id="matImg2" src=""></div></div>
           </div>
@@ -324,7 +319,7 @@
           <div class="material-card mb-2" style="padding:1rem;"><p class="font-bold text-center mb-2" style="font-size:1.1rem;">教材の視覚 ＝ 定義式の論理</p><div class="summary-grid"><div class="summary-box"><div style="background:#dbeafe;padding:0.4rem;border-radius:0.25rem;margin-bottom:0.3rem;font-size:1.05rem;">青の帯</div><div style="font-size:1.0rem;">が</div><div style="background:#fee2e2;padding:0.4rem;border-radius:0.25rem;margin-top:0.3rem;font-size:1.05rem;">赤い帯 に収まる</div></div><div class="summary-arrow">=</div><div class="summary-box"><div style="background:#dbeafe;padding:0.4rem;border-radius:0.25rem;margin-bottom:0.3rem;font-size:1.05rem;">| x − a | &lt; δ</div><div style="font-size:1.2rem;">⇒</div><div style="background:#fee2e2;padding:0.4rem;border-radius:0.25rem;margin-top:0.3rem;font-size:1.05rem;">| f(x) − L | &lt; ε</div></div><div class="summary-arrow">→</div><div class="summary-box" style="background:#f0fdf4;"><div class="font-bold text-green" style="font-size:1.1rem;">ε-δ論法</div><div class="font-bold text-green" style="font-size:1.1rem;">成立</div></div></div></div>
           <div class="flex mb-2"><div class="material-card green" style="flex:1;text-align:center;"><p class="text-xs font-bold text-green">どんな ε でも δ が見つかる</p><p class="text-xs">→ <strong>連続</strong>（ b = 0 ）</p></div><div class="material-card red" style="flex:1;text-align:center;"><p class="text-xs font-bold text-red">b>ε なら δ が見つからない</p><p class="text-xs">→ <strong>不連続</strong>（ b > 0 ）</p></div></div>
           
-          <div class="material-card blue"><p class="text-xs font-bold text-blue">Q4. 理解は深まりましたか？</p><select id="ws_q4" style="width:100%;font-size:0.75rem;"><option value="">選択</option><option value="とても深まった">とても深まった</option><option value="深まった">深まった</option><option value="あまり深まらなかった">あまり</option><option value="深まらなかった">深まらなかった</option></select><p class="text-xs font-bold mt-1">具体的に:</p><textarea id="ws_q4r" rows="2" style="font-size:0.75rem;"></textarea></div>
+          <div class="material-card blue"><p class="text-xs font-bold text-blue">Q2. 理解は深まりましたか？</p><select id="ws_q4" style="width:100%;font-size:0.75rem;"><option value="">選択</option><option value="とても深まった">とても深まった</option><option value="深まった">深まった</option><option value="あまり深まらなかった">あまり</option><option value="深まらなかった">深まらなかった</option></select><p class="text-xs font-bold mt-1">具体的に:</p><textarea id="ws_q4r" rows="2" style="font-size:0.75rem;"></textarea></div>
         </div>
         <div style="text-align:center; margin-top:0.75rem;">
           <button class="btn btn-secondary" onclick="prevMat()" id="matPrev" disabled>← 前</button>
@@ -336,25 +331,24 @@
     
     <!-- Phase 3: Post-test -->
     <div class="phase" id="phase3">
-      <div class="phase-header test"><h2>📝 事後テスト</h2><p>学習後の理解度を確認</p></div>
       <div class="content">
         <div class="question">
           <div class="q-header"><span class="q-num">1</span><span class="q-text">ε-δ論法の定義において、正しい記述はどれか</span><span class="q-point">(1点)</span></div>
           <div class="def-box">lim<sub>x→a</sub>f(x) = L ⟺ ∀ε>0, ∃δ>0 s.t. |x−a|<δ ⇒ |f(x)−L|<ε</div>
           <div class="options">
-            <div class="option"><input type="radio" name="post_q1" value="a"><label>a. ε と δ の順序は関係ない</label></div>
-            <div class="option"><input type="radio" name="post_q1" value="b"><label>b. ε を先に決め、それに応じて δ を選ぶ</label></div>
-            <div class="option"><input type="radio" name="post_q1" value="c"><label>c. ε と δ は同時に決める</label></div>
-            <div class="option"><input type="radio" name="post_q1" value="d"><label>d. δ を先に決め、それに応じて ε を選ぶ</label></div>
+            <div class="option"><input type="radio" name="post_q1" value="a"><label>ε と δ の順序は関係ない</label></div>
+            <div class="option"><input type="radio" name="post_q1" value="b"><label>ε を先に決め、それに応じて δ を選ぶ</label></div>
+            <div class="option"><input type="radio" name="post_q1" value="c"><label>ε と δ は同時に決める</label></div>
+            <div class="option"><input type="radio" name="post_q1" value="d"><label>δ を先に決め、それに応じて ε を選ぶ</label></div>
           </div>
         </div>
         <div class="question">
           <div class="q-header"><span class="q-num">2</span><span class="q-text">「|x−a|<δ ⇒ |f(x)−L|<ε」の意味として正しいのはどれか</span><span class="q-point">(1点)</span></div>
           <div class="options">
-            <div class="option"><input type="radio" name="post_q2" value="a"><label>a. x が a から δ 以上離れていれば、f(x) は L から ε 以上離れる</label></div>
-            <div class="option"><input type="radio" name="post_q2" value="b"><label>b. f(x) が L から ε 未満の距離にあれば、x は a から δ 未満の距離にある</label></div>
-            <div class="option"><input type="radio" name="post_q2" value="c"><label>c. f(x) が L から ε 以上離れていれば、x は a から δ 以上離れる</label></div>
-            <div class="option"><input type="radio" name="post_q2" value="d"><label>d. x が a から δ 未満の距離にあれば、f(x) はLから ε 未満の距離にある</label></div>
+            <div class="option"><input type="radio" name="post_q2" value="a"><label>x が a から δ 以上離れていれば、f(x) は L から ε 以上離れる</label></div>
+            <div class="option"><input type="radio" name="post_q2" value="b"><label>f(x) が L から ε 未満の距離にあれば、x は a から δ 未満の距離にある</label></div>
+            <div class="option"><input type="radio" name="post_q2" value="c"><label>f(x) が L から ε 以上離れていれば、x は a から δ 以上離れる</label></div>
+            <div class="option"><input type="radio" name="post_q2" value="d"><label>x が a から δ 未満の距離にあれば、f(x) はLから ε 未満の距離にある</label></div>
           </div>
         </div>
         <div class="question">
@@ -533,14 +527,15 @@
           d3: document.getElementById('ws_d3')?.value||'',
           r1: document.getElementById('ws_r1')?.value||'',
           r2: document.getElementById('ws_r2')?.value||'',
-          r3: document.getElementById('ws_r3')?.value||'',
-          q1: document.getElementById('ws_q1')?.value||''
+          r3: document.getElementById('ws_r3')?.value||''
         },
         explore: {
+          e1d: document.getElementById('ws_e1d')?.value||'',
+          e2d: document.getElementById('ws_e2d')?.value||'',
+          e3d: document.getElementById('ws_e3d')?.value||'',
           e1r: document.getElementById('ws_e1r')?.value||'',
           e2r: document.getElementById('ws_e2r')?.value||'',
           e3r: document.getElementById('ws_e3r')?.value||'',
-          q2: document.getElementById('ws_q2')?.value||'',
           q3: document.getElementById('ws_q3')?.value||''
         },
         q4: document.getElementById('ws_q4')?.value||'',

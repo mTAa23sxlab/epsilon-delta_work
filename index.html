@@ -232,13 +232,13 @@
       <div class="content">
         <div class="lecture-slide" id="lec0">
           <div class="lecture-title">ε-δ論法の定義</div>
-          <div class="formula">lim<sub>x→a</sub> f(x) = L ⟺ ∀ε > 0, ∃δ > 0 s.t. |x − a| < δ ⇒ |f(x) − L| < ε</div>
+          <div class="formula">lim<sub>x→a</sub> f(x) = f(a) ⟺ ∀ε > 0, ∃δ > 0 s.t. |x − a| < δ ⇒ |f(x) − f(a)| < ε</div>
           <div class="lecture-content">
             <p><strong>意味:</strong></p>
             <ul style="margin-left:1.5rem; margin-top:0.5rem;">
               <li>どんなに小さい正の数 ε をとっても</li>
               <li>それに対応する正の数 δ が必ず見つかって</li>
-              <li>x が a から δ 未満の距離にあれば、f(x) は L から ε 未満の距離にある</li>
+              <li>x が a から δ 未満の距離にあれば、f(x) は f(a) から ε 未満の距離にある</li>
             </ul>
             <div class="note">💡 ポイント: ε が先に与えられ、それに応じて δ を選ぶ</div>
           </div>
@@ -280,7 +280,7 @@
     <div class="phase" id="phase2">
       <div class="content">
         <div id="mat0">
-          <div class="def-box mb-2"><p class="text-xs font-bold text-orange text-center mb-1">ε-δ論法の定義</p><p class="text-xs text-center">lim<sub>x→a</sub>f(x) = L ⟺ ∀ε > 0, ∃δ > 0 s.t. <span class="text-blue">| x − a | < δ</span> ⇒ <span class="text-red">| f(x) − L | < ε</span></p></div>
+          <div class="def-box mb-2"><p class="text-xs font-bold text-orange text-center mb-1">ε-δ論法の定義</p><p class="text-xs text-center">lim<sub>x→a</sub>f(x) = f(a) ⟺ ∀ε > 0, ∃δ > 0 s.t. <span class="text-blue">| x − a | < δ</span> ⇒ <span class="text-red">| f(x) − f(a) | < ε</span></p></div>
           <div class="goal-box mb-2"><p class="text-xs font-bold text-purple text-center">🎯 この教材で理解すること</p><p class="text-xs text-center"><span class="text-blue">青い帯</span>が<span class="text-red">赤い帯</span>に<strong>収まる</strong> → <strong>⇒が成立</strong></p></div>
           <div class="judge-box mb-2"><p class="text-xs font-bold text-green">✓ 「収まる」の判定基準</p><p class="text-xs"><span class="text-blue">青い帯</span>が<span class="text-red">赤い帯</span>からはみ出していなければOK</p></div>
           <div class="flex">
@@ -316,7 +316,7 @@
         </div>
         <div id="mat2" class="hidden">
           <p class="text-sm font-bold text-center mb-2">まとめ</p>
-          <div class="material-card mb-2" style="padding:1rem;"><p class="font-bold text-center mb-2" style="font-size:1.1rem;">教材の視覚 ＝ 定義式の論理</p><div class="summary-grid"><div class="summary-box"><div style="background:#dbeafe;padding:0.4rem;border-radius:0.25rem;margin-bottom:0.3rem;font-size:1.05rem;">青の帯</div><div style="font-size:1.0rem;">が</div><div style="background:#fee2e2;padding:0.4rem;border-radius:0.25rem;margin-top:0.3rem;font-size:1.05rem;">赤い帯 に収まる</div></div><div class="summary-arrow">=</div><div class="summary-box"><div style="background:#dbeafe;padding:0.4rem;border-radius:0.25rem;margin-bottom:0.3rem;font-size:1.05rem;">| x − a | &lt; δ</div><div style="font-size:1.2rem;">⇒</div><div style="background:#fee2e2;padding:0.4rem;border-radius:0.25rem;margin-top:0.3rem;font-size:1.05rem;">| f(x) − L | &lt; ε</div></div><div class="summary-arrow">→</div><div class="summary-box" style="background:#f0fdf4;"><div class="font-bold text-green" style="font-size:1.1rem;">ε-δ論法</div><div class="font-bold text-green" style="font-size:1.1rem;">成立</div></div></div></div>
+          <div class="material-card mb-2" style="padding:1rem;"><p class="font-bold text-center mb-2" style="font-size:1.1rem;">教材の視覚 ＝ 定義式の論理</p><div class="summary-grid"><div class="summary-box"><div style="background:#dbeafe;padding:0.4rem;border-radius:0.25rem;margin-bottom:0.3rem;font-size:1.05rem;">青の帯</div><div style="font-size:1.0rem;">が</div><div style="background:#fee2e2;padding:0.4rem;border-radius:0.25rem;margin-top:0.3rem;font-size:1.05rem;">赤い帯 に収まる</div></div><div class="summary-arrow">=</div><div class="summary-box"><div style="background:#dbeafe;padding:0.4rem;border-radius:0.25rem;margin-bottom:0.3rem;font-size:1.05rem;">| x − a | &lt; δ</div><div style="font-size:1.2rem;">⇒</div><div style="background:#fee2e2;padding:0.4rem;border-radius:0.25rem;margin-top:0.3rem;font-size:1.05rem;">| f(x) − f(a) | &lt; ε</div></div><div class="summary-arrow">→</div><div class="summary-box" style="background:#f0fdf4;"><div class="font-bold text-green" style="font-size:1.1rem;">ε-δ論法</div><div class="font-bold text-green" style="font-size:1.1rem;">成立</div></div></div></div>
           <div class="flex mb-2"><div class="material-card green" style="flex:1;text-align:center;"><p class="text-xs font-bold text-green">どんな ε でも δ が見つかる</p><p class="text-xs">→ <strong>連続</strong>（ b = 0 ）</p></div><div class="material-card red" style="flex:1;text-align:center;"><p class="text-xs font-bold text-red">b>ε なら δ が見つからない</p><p class="text-xs">→ <strong>不連続</strong>（ b > 0 ）</p></div></div>
           
           <div class="material-card blue"><p class="text-xs font-bold text-blue">Q2. 理解は深まりましたか？</p><select id="ws_q4" style="width:100%;font-size:0.75rem;"><option value="">選択</option><option value="とても深まった">とても深まった</option><option value="深まった">深まった</option><option value="あまり深まらなかった">あまり</option><option value="深まらなかった">深まらなかった</option></select><p class="text-xs font-bold mt-1">具体的に:</p><textarea id="ws_q4r" rows="2" style="font-size:0.75rem;"></textarea></div>
